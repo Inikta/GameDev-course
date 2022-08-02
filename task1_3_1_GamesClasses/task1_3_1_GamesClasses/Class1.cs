@@ -1,17 +1,17 @@
 ﻿
-namespace computer_games
+namespace ComputerGames
 {
     class MOBA
     {
-        private string name;
+        private string _name;
 
         public string description;
 
-        private int year;
+        private int _year;
 
-        private int amountOfCharacters;
+        private int _AmountOfCharacters;
 
-        private int teamSize;
+        private int _TeamSize;
 
         public MOBA(
             string name,
@@ -20,33 +20,33 @@ namespace computer_games
             int teamSize,
             string description)
         {
-            this.name = name;
-            this.year = year;
-            this.amountOfCharacters = amountOfCharacters;
-            this.teamSize = teamSize;
+            this._name = name;
+            this._year = year;
+            this._AmountOfCharacters = amountOfCharacters;
+            this._TeamSize = teamSize;
             this.description = description;
         }
-        public void message() 
+        public void Message() 
         {
-            Console.WriteLine("Name: " + name);
-            Console.WriteLine("Year: " + year);
-            Console.WriteLine("Amount of characters: " + amountOfCharacters);
-            Console.WriteLine("Size of team: " + teamSize);
+            Console.WriteLine("Name: " + _name);
+            Console.WriteLine("Year: " + _year);
+            Console.WriteLine("Amount of characters: " + _AmountOfCharacters);
+            Console.WriteLine("Size of team: " + _TeamSize);
             Console.WriteLine("Description: " + description);
         }
     }
 
     internal class Shooter
     {
-        private string name;
+        private string _name;
 
         public string description;
 
-        private int year;
+        private int _year;
 
-        private int amountOfGunTypes;
+        private int _AmountOfGunTypes;
 
-        private int teamSize;
+        private int _TeamSize;
 
         public Shooter(
             string name,
@@ -55,33 +55,33 @@ namespace computer_games
             int teamSize,
             string description)
         {
-            this.name = name;
-            this.year = year;
-            this.amountOfGunTypes = amountOfGunTypes;
-            this.teamSize = teamSize;
+            this._name = name;
+            this._year = year;
+            this._AmountOfGunTypes = amountOfGunTypes;
+            this._TeamSize = teamSize;
             this.description = description;
         }
-        public void message()
+        public void Message()
         {
-            Console.WriteLine("Name: " + name);
-            Console.WriteLine("Year: " + year);
-            Console.WriteLine("Amount of gun types: " + amountOfGunTypes);
-            Console.WriteLine("Size of team: " + teamSize);
+            Console.WriteLine("Name: " + _name);
+            Console.WriteLine("Year: " + _year);
+            Console.WriteLine("Amount of gun types: " + _AmountOfGunTypes);
+            Console.WriteLine("Size of team: " + _TeamSize);
             Console.WriteLine("Description: " + description);
         }
     }
 
     internal class RPG
     {
-        private string name;
+        private string _name;
 
         public string description;
 
-        private int year;
+        private int _year;
 
-        private string view;
+        private string _view;
 
-        private int hoursToComplete;
+        private int _HoursToComplete;
 
         public RPG(
             string name,
@@ -90,33 +90,33 @@ namespace computer_games
             int hoursToComplete,
             string description)
         {
-            this.name = name;
-            this.year = year;
-            this.view = view;
-            this.hoursToComplete = hoursToComplete;
+            this._name = name;
+            this._year = year;
+            this._view = view;
+            this._HoursToComplete = hoursToComplete;
             this.description = description;
         }
-        public void message()
+        public void Message()
         {
-            Console.WriteLine("Name: " + name);
-            Console.WriteLine("Year: " + year);
-            Console.WriteLine("View: " + view);
-            Console.WriteLine("Hours to complete: " + hoursToComplete);
+            Console.WriteLine("Name: " + _name);
+            Console.WriteLine("Year: " + _year);
+            Console.WriteLine("View: " + _view);
+            Console.WriteLine("Hours to complete: " + _HoursToComplete);
             Console.WriteLine("Description: " + description);
         }
     }
 
     internal class Puzzle
     {
-        private string name;
+        private string _name;
 
         public string description;
 
-        private int year;
+        private int _year;
 
-        private int complexityRating;
+        private int _ComplexityRating;
 
-        private int amountOfLevels;
+        private int _AmountOfLevels;
 
         public Puzzle(
             string name,
@@ -125,33 +125,33 @@ namespace computer_games
             int amountOfLevels,
             string description)
         {
-            this.name = name;
-            this.year = year;
-            this.complexityRating = complexityRating;
-            this.amountOfLevels = amountOfLevels;
+            this._name = name;
+            this._year = year;
+            this._ComplexityRating = complexityRating;
+            this._AmountOfLevels = amountOfLevels;
             this.description = description;
         }
-        public void message()
+        public void Message()
         {
-            Console.WriteLine("Name: " + name);
-            Console.WriteLine("Year: " + year);
-            Console.WriteLine("Complexity rating: " + complexityRating);
-            Console.WriteLine("Amount of levels: " + amountOfLevels);
+            Console.WriteLine("Name: " + _name);
+            Console.WriteLine("Year: " + _year);
+            Console.WriteLine("Complexity rating: " + _ComplexityRating);
+            Console.WriteLine("Amount of levels: " + _AmountOfLevels);
             Console.WriteLine("Description: " + description);
         }
     }
 
     internal class Strategy
     {
-        private string name;
+        private string _name;
 
         public string description;
 
-        private int year;
+        private int _year;
 
-        private string historicalPeriod;
+        private string _HistoricalPeriod;
 
-        private int amountOfRivals;
+        private int _AmountOfRivals;
 
         public Strategy(
             string name,
@@ -160,18 +160,18 @@ namespace computer_games
             int amountOfRivals,
             string description)
         {
-            this.name = name;
-            this.year = year;
-            this.historicalPeriod = historicalPeriod;
-            this.amountOfRivals = amountOfRivals;
+            this._name = name;
+            this._year = year;
+            this._HistoricalPeriod = historicalPeriod;
+            this._AmountOfRivals = amountOfRivals;
             this.description = description;
         }
-        public void message()
+        public void Message()
         {
-            Console.WriteLine("Name: " + name);
-            Console.WriteLine("Year: " + year);
-            Console.WriteLine("Hsitorical period: " + historicalPeriod);
-            Console.WriteLine("Maximal amount of rivals: " + amountOfRivals);
+            Console.WriteLine("Name: " + _name);
+            Console.WriteLine("Year: " + _year);
+            Console.WriteLine("Hsitorical period: " + _HistoricalPeriod);
+            Console.WriteLine("Maximal amount of rivals: " + _AmountOfRivals);
             Console.WriteLine("Description: " + description);
         }
     }
